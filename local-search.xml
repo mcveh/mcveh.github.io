@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>SSL</title>
+    <link href="/2022/12/02/SSL/"/>
+    <url>/2022/12/02/SSL/</url>
+    
+    <content type="html"><![CDATA[<p>SSL，想必大家都了解。ssl各厂商都提供。但我并不推荐。不是因为不信任，是因为要信息所以国外的好。他是一个加密通信提供给用户良好的环境。ssl已经发展成了网站安全代表。</p><p>Cloudflare:15年SSL,你能用15年吗?太长了。可能是世界最长ssl证书</p><p>zerossl:是letsencrypt提供商。90天，到期免费续期。<br>国内letsencrypt提供有很多比如</p><p><a href="https://letsencrypt.osfipin.com/">https://letsencrypt.osfipin.com/</a><br><a href="https://freessl.cn/">https://freessl.cn</a><br>等都是ssl。个人推荐letsencrypt.osfipin.com因为不收集信息只要邮箱。腾讯、阿里都有ssl。<br>你也可以使用linux命令生成</p><p>letsencrypt好处</p><p>1.支持通配符 FREE<br>2.安全<br>3.公共<br>4.续费FREE<br>5.方便<br>6.受信任SSL<br>7.申请方法多</p><p>SSL类型:1.单域名2.多域名3.通配符</p><p>由于大多站长网页多所以都是通配符，我是支持通配的。<br>最后SSL世界上有很多FREE的尽管去申请吧！</p><p><img src="https://gcore.jsdelivr.net/gh/lrhtony/BiliEmoji@master/src/%E5%B0%8F%E9%BB%84%E8%84%B8/doge-%E6%98%A5%E8%8A%82.png" alt="图片描述"></p><p>国内通配<a href="https://letsencrypt.osfipin.com/%E6%9C%80%E5%A5%BD">https://letsencrypt.osfipin.com/最好</a> bye</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>域名FREE</title>
+    <link href="/2022/12/02/%E5%9F%9F%E5%90%8DFREE/"/>
+    <url>/2022/12/02/%E5%9F%9F%E5%90%8DFREE/</url>
+    
+    <content type="html"><![CDATA[<p>免费域名eu.org不同于freenom.com要浏览器插件，eu.org不存在流量大回收域名。他是在1996年创建，还是很稳定。<br>保罗·莫克〈Paul Mockapetris〉1996年9月&#x2F; 10月创立。<br>这是中立域名。</p><p>申请:<br>第一步:Sign-in or sign-uphere!  点击here或<a href="https://nic.eu.org/arf/en/login/%E8%BF%9B%E5%85%A5">https://nic.eu.org/arf/en/login/进入</a><br>第二步:点击Register注册，由于是非国家域名nic是可以让中国人（全世界人注册的）</p><p>信息:Contact Information</p><pre><code class="hljs">Name:名字E-mail:邮箱Address:地址，五个都是地址Country:国家，点v查看Phone:电话Fax:传真这些信息可以找信息生成，也可以填自己的。点I have read and I accept thedomain policy下面框Password Confirm Password一个密码另一个重复密码，写同一个就对了。最后点Creat注册。</code></pre><p>第三步:申请。自己带个翻译，注册就行。</p><p>看到:Contact successfully created as 名称. Please check instructions sent to 邮箱 to validate it.</p><p>回邮箱点邮件HTTPS开头的验证。</p><p>然后网页:Contact handle:用户名<br>         Contact email: 邮箱<br>点上面login</p><p>用户名登陆用名称</p><p>登了点New Domain申请</p><p>Complete domain name框下写域名XXX.eu.org</p><p>写完域名拉到下面Name servers<br>自动点的是第三个选第一个Check for correctness of</p><p>Name:服务器名称能写9个写Name1、Name2、Name3、Name4……  ip不用写</p><p>Name推荐写dnspod（只是检查）申请好就可以直接Cloudflare托管</p><p>最后点Submit</p><p>跳转网页最后一行是Done就得，如果是有数字检查步骤。<br>我提一点。由于你申请域名是人工检查的所以要1-30天。申请服务器错误检查选第一个没报错就是自动申请提交了等着就行。最快1天。申请服务器写腾讯DNS申请好后换Cloudflare直接托管。</p><p>eu.org是公共的所以申请最多5个多了没用。最后:不要拿eu.org干坏事否则会被墙的。马上来公安局。</p><p>他的域名不像FREENOM那么拉，国内访问很快。FREEnom少玩，随时被收等着吧！</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>CDN加速</title>
+    <link href="/2022/12/02/CDN%E5%8A%A0%E9%80%9F/"/>
+    <url>/2022/12/02/CDN%E5%8A%A0%E9%80%9F/</url>
+    
+    <content type="html"><![CDATA[<p>什么是cdn?cdn能加速?<br>cdn是一个加速服务,通过服务器转发降低ping值<br> CDN接入是很好的,cdn是通过用户将数据发送给cdn<br> 但由于cdn不能一直请求源服务器所以是静态。这是cdn原理图<br> <img src="https://s3.uuu.ovh/imgs/2022/11/26/bc69301ac078f687.jpg" alt="图片描述"><br>从b站蛋老师转发图片</p><p>cdn工作<br>cdn通过在世界各地建立服务器来转发，把大家流量发送到服务器，服务器在特定时间发送到源站。以来减轻源站压力。</p><p>cdn负载均衡<br>cdn能防住DDOS，如一台分发服务器受到攻击，可立马转换服务器<br>负载均衡，如一个服务器负载过量，会切换到较少负载的服务器以来提升速度。</p><p>CDN接入<br>小到跑路云，大到阿里云、腾讯云、cloudflare、又拍云等<br>今天注重讲cloudflare<br>cloudflare是一家大型公司，根据首页有几句话<br>Cloudflare 全球网络<br>Cloudflare 网络与几乎每一个服务提供商和云提供商直连，可在 50 毫秒内触及 95% 的世界人口。<br>我们庞大的全球网络是地球上最快的网络之一，受到数百万个 Web 资产的信赖。<br>1.个城市，遍布 100 多个国家和地区，包括中国大陆<br>2.个网络直连到 Cloudflare，包括所有主要 ISP、云提供商和企业<br>3.全球网络边缘容量，包括中转连接、对等和专用网络互连<br>4.距离 95% 的世界上网人口</p><p>服务器有:北美、拉丁美洲与加勒比地区、非洲、欧洲、中东、亚洲、中国大陆、大洋洲<br>可见服务器之多</p><p>cdn:cloudflare免费 不限流量，不收$费</p><p><img src="https://s3.uuu.ovh/imgs/2022/11/26/89c056580fabe9c7.jpg" alt="图片描述"><br>写好域名就可点小云朵开启CDN</p><p>cloudflare会把你网站内容保存，以提高访问<br>注意:1.cloudflareCDN不适合国内网站，国外博客github等搭建适合<br>        2.cloudflareCDN使用前先获取证书(https)，cloudflare有提供15年是真长。<br>        3.cloudflare要付$费才有国内服务器</p><p>cloudflare还有很多内容，慢慢探索吧!!!</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>江泽民</title>
+    <link href="/2022/12/02/%E6%B1%9F%E6%B3%BD%E6%B0%91/"/>
+    <url>/2022/12/02/%E6%B1%9F%E6%B3%BD%E6%B0%91/</url>
+    
+    <content type="html"><![CDATA[<p>江泽民同志患白血病合并多脏器功能衰竭，2022年11月30日12时13分在上海离开了我们，享年96岁。希望他过的好。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
